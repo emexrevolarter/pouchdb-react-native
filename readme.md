@@ -10,8 +10,9 @@ PouchDB, the ReactNative-only edition. A preset representing the PouchDB code th
 The `pouchdb-react-native` preset contains the version of PouchDB that is designed for ReactNative. In particular, it ships with the AsyncStorage adapters as its default adapters. It also contains the replication, HTTP, and map/reduce plugins.
 
 ### What is New
-This pouchdb-react-native has this error: "can't find variable buffer", when you try to run it.
-To solve this problem, download pouchdb-binary-utils from [![npm Package](https://travis-ci.org/stockulus/pouchdb-react-native.svg)
+This fork contains the solution to pouchdb-react-native error: "can't find variable buffer", when you try to run it.
+The modified library `pouchdb-binary-utils` was added to the packages.
+You can as well download pouchdb-binary-utils from [![npm Package](https://travis-ci.org/stockulus/pouchdb-react-native.svg)
 https://github.com/emexrevolarter/react-native/tree/master/pouchdb-binary-utils
 
 Then, follow the steps listed in the readme.md. This commit solved this problem by simply replacing the old buffer plugin with the newer buffer plugin.
